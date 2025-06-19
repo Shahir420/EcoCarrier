@@ -1,0 +1,251 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif; /* Changed font to Inter */
+  background-color: #e5ddd0; /* Very light off-white/beige for body background, matching PDF preference */
+  color: #1d5306; /* Darker green for primary text */
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ffffff; /* Beige shade for header background, consistent with PDF reference */
+  color: #1d5306; /* Darker green for header text */
+  text-align: center;
+  padding: 4rem 1rem 3rem;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0rem;
+}
+
+.logo img {
+  width: 300px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 3.2rem; /* Slightly larger font for main title */
+  margin-bottom: 0.5rem;
+  color: #1d5306; /* Green from logo as main accent */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+header p {
+  font-size: 1.4rem; /* Slightly larger motto text */
+  margin: 0;
+  font-style: italic;
+  color: #1d5306; /* Slightly lighter green for motto */
+}
+
+section {
+  padding: 3rem 1rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+section h2 {
+  text-align: center;
+  font-size: 2.5rem; /* Larger section titles */
+  margin-bottom: 2.5rem;
+  color: #2e4a2e; /* Green from logo for section titles */
+  border-bottom: 3px solid #66bb6a; /* Green underline */
+  padding-bottom: 10px;
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.intro-text, .contact-text, .eco-professional-text {
+  text-align: center;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+  color: #3b5c3b; /* Darker green for body text */
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.service {
+  background-color: #8ec656; /* Lighter green background for services */
+  border-radius: 15px; /* More rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  padding: 2.5rem;
+  flex: 1 1 280px; /* Adjusted flex basis for slightly larger cards */
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  border: 1px solid #649565; /* Subtle green border */
+}
+
+.service:hover {
+  transform: translateY(-8px) scale(1.02); /* More pronounced lift and slight scale */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.service h3 {
+  color: #1d5306; /* Green for service titles */
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.service p {
+  color: #3b5c3b; /* Darker green for service description */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem; /* Increased gap in form */
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff; /* White background for form */
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #2e4a2e; /* Dark green for labels */
+  font-size: 1.1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 0.9rem; /* Increased padding */
+  border: 1px solid #c8e6c9; /* Lighter green border */
+  border-radius: 8px; /* More rounded input fields */
+  font-size: 1.05rem;
+  color: #3b5c3b;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05); /* Inner shadow for depth */
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #66bb6a; /* Green focus border */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.2); /* Soft green glow on focus */
+}
+
+.contact-form button {
+  background-color: #4CAF50; /* Green button */
+  color: white;
+  padding: 1rem; /* Larger button */
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form button:hover {
+  background-color: #66bb6a; /* Lighter green on hover */
+  transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.floating-buttons {
+  position: fixed;
+  bottom: 25px; /* Slightly higher */
+  right: 25px; /* Slightly more to the right */
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* Increased gap */
+  z-index: 1000;
+}
+
+.floating-buttons a {
+  background-color: #1d5306; /* Green buttons */
+  color: white;
+  width: 55px; /* Slightly larger buttons */
+  height: 55px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25); /* More prominent shadow */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1.5rem; /* Larger icons */
+}
+
+.floating-buttons a:hover {
+  background-color: #8ec656; /* Lighter green on hover */
+  transform: scale(1.1); /* Pop effect on hover */
+}
+
+footer {
+  background-color: #4CAF50; /* Dark green footer */
+  color: #e6ffe6; /* Light green text */
+  text-align: center;
+  padding: 2rem;
+  font-size: 1rem;
+  margin-top: 3rem; /* More space above footer */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2.2rem;
+  }
+  header p {
+    font-size: 1.1rem;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
+  .service {
+    flex: 1 1 90%; /* Stack services on small screens */
+    margin: 0 1rem; /* Add some horizontal margin */
+  }
+  .contact-form {
+    padding: 1.5rem;
+    margin: 0 1rem;
+  }
+  .floating-buttons {
+    bottom: 15px;
+    right: 15px;
+    gap: 8px;
+  }
+  .floating-buttons a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.3rem;
+  }
+}
+ /* Popup Window Styles var(--popup-yellow); */
+    .discount-popup {
+      color: #ffffff;
+      position: fixed;
+      top: -100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 600px;
+      background-color: crimson;
+      border: 2px solid var(--popup-border);
+      border-radius: 10px;
+      padding: 20px 30px;
+      text-align: center;
+      font-size: 1.2rem;
+      font-weight: bold;
+      z-index: 9999;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: top 0.6s ease;
+    }
+
+    .discount-popup.show {
+      top: 30px;
+    }

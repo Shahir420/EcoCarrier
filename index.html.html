@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECOCARRIERAB – Framtidens Transport är Grön</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="EcoCarrier.css" /> <!-- Extern CSS-fil -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<!-- Popup for Discounts -->
+  <div class="discount-popup" id="discountPopup">
+    🌿 Sommarerbjudande – Juni t.o.m. Augusti <br>
+    499kr/dag
+  </div>
+
+  <script>
+    // Show popup on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const popup = document.getElementById('discountPopup');
+      popup.classList.add('show');
+    });
+
+    // Hide popup on scroll
+    window.addEventListener('scroll', () => {
+      const popup = document.getElementById('discountPopup');
+      if (popup.classList.contains('show')) {
+        popup.classList.remove('show');
+      }
+    });
+  </script>
+<body>
+  <header>
+    <div class="logo">
+      <!-- Make sure to replace "Nabizada Logo.svg" with "GReenwheels.png" on your server -->
+      <img src="Untitled design (1).svg" alt="EcoCarrier Logo">
+    </div>
+    <h1>ECOCARRIERAB</h1>
+    <p>FRAMTIDENS TRANSPORT ÄR GRÖN.</p>
+  </header>
+
+
+  <section>
+    <h2>Välkommen</h2>
+    <p class="intro-text">
+      Varmt välkommen till ECOCARRIER – din pålitliga partner för miljövänliga transporter och flyttar av alla slag. Vi är dedikerade till att erbjuda effektiva, professionella och hållbara lösningar som tar hand om både dina ägodelar och vår planet.
+    </p>
+  </section>
+
+  <section>
+    <h2>Våra Tjänster</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Lättlastbilsuthyrning</h3>
+        <p>Lätt lastbil 18 m³ med bakgavellyft – perfekt för flytt! manuell och Automatväxlad, diesel. Du kör med B-körkort. Hyra: 499 kr/dag.</p>
+      </div>
+      <div class="service">
+        <h3>Företagsflytt</h3>
+        <p>Effektiva företagsflyttar med minimalt avbrott i verksamheten och fokus på hållbarhet.</p>
+      </div>
+      <div class="service">
+        <h3>BORTFORSLING – SNABBT & ENKELT!</h3>
+        <p>Möbler,skräp,trädgårdsavfall,Renoveringsavfall,Från endast 399.</p>
+      </div>
+      <div class="service">
+        <h3>Möbeltransport</h3>
+        <p>Enskilda eller samlade transporter av möbler med optimerade rutter för att minska utsläpp.</p>
+      </div>
+      <div class="service">
+        <h3>Monteringstjänst</h3>
+        <p>Professionell demontering och montering av dina möbler, utfört med precision.</p>
+      </div>
+      <div class="service">
+        <h3>Packningstjänst</h3>
+        <p>Professionellt packmaterial och packhjälp för att skydda dina tillhörigheter, med återvinningsbara alternativ.</p>
+      </div>
+      <div class="service">
+        <h3>Privatflytt</h3>
+        <p>Komplett flyttservice för ditt hem – snabbt, säkert och med minimal miljöpåverkan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Vårt Engagemang för Miljön & Professionalism</h2>
+    <p class="eco-professional-text">
+      På ECOCARRIER tror vi på att kombinera professionalism med ett djupt engagemang för miljön. Vi strävar efter att minimera vårt koldioxidavtryck genom att optimera våra rutter, använda bränsleeffektiva fordon och implementera hållbara metoder i varje steg av transportprocessen. Våra medarbetare är utbildade för att hantera alla uppdrag med största omsorg och effektivitet, vilket garanterar en stressfri upplevelse för dig. Vi är stolta över att leverera högkvalitativ service som är både pålitlig och ansvarsfull.
+    </p>
+  </section>
+
+  <section>
+    <h2>Kontakta Oss</h2>
+    <p class="contact-text">Kontakta oss redan idag för en kostnadsfri offert!</p>
+    <form class="contact-form" action="https://formsubmit.co/ecocarrierab@gmail.com" method="POST" enctype="multipart/form-data">
+      <input type="hidden" name="_captcha" value="false">
+      <label for="name">Namn</label>
+      <input type="text" name="name" id="name" placeholder="Ditt Namn" required />
+      <label for="email">E-post</label>
+      <input type="email" name="email" id="email" placeholder="Din E-post" required />
+      <label for="message">Meddelande</label>
+      <textarea name="message" id="message" rows="4" placeholder="Ditt Meddelande" required></textarea>
+      <label for="attachment">Ladda upp fil (valfritt)</label>
+      <input type="file" name="attachment" id="attachment" />
+      <button type="submit">Skicka</button>
+    </form>
+  </section>
+
+  <div class="floating-buttons">
+    <a href="tel:+46739905087" title="Ring Oss"><i class="fas fa-phone"></i></a>
+    <a href="https://wa.me/46739905087" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+  <footer>
+    &copy; 2025 ECOCARRIER. Alla rättigheter förbehållna.
+  </footer>
+</body>
+</html>
